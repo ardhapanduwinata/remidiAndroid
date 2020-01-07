@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".FormNumberActivity">
+
+    <RelativeLayout
+        android:gravity="center_horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <TextView
+            android:id="@+id/tvTanggal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="20dp"
+            android:text="Tanggal"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="10dp"
+            android:textSize="20dp">
+        </TextView>
+
+        <EditText
+            android:id="@+id/edTanggal"
+            android:layout_below="@+id/tvTanggal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:editable="false"
+            android:focusable="false"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:textSize="20dp"
+            android:hint="Pilihlah Tanggal">
+        </EditText>
+
+        <TextView
+            android:id="@+id/tvRuang"
+            android:layout_below="@+id/edTanggal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="20dp"
+            android:text="Ruang"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="10dp"
+            android:textSize="20dp">
+        </TextView>
+
+        <EditText
+            android:id="@+id/edRuang"
+            android:layout_below="@+id/tvRuang"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:textSize="20dp"
+            android:hint="Nama Ruangan">
+        </EditText>
+
+        <Button
+            android:id="@+id/btnCreate"
+            android:layout_below="@+id/edRuang"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:text="Create"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+        </Button>
+    </RelativeLayout>
+</RelativeLayout>
